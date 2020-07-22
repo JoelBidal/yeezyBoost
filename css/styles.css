@@ -236,6 +236,43 @@
     font-size: 100px;
 }
 
+/* Boxs zapatillas blancas */
+#box-white-shoes-2,
+#box-white-shoes-3,
+#box-white-shoes-4{
+    height: 100px;
+    width: 100px;
+    background: #d1d1d1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#box-white-shoes-2 img,
+#box-white-shoes-3 img,
+#box-white-shoes-4 img{max-width: 110px;}
+
+#box-white-shoes-2{
+    display: none;
+    position: absolute;
+    bottom: 50px;
+}
+
+#box-white-shoes-3{
+    display: none;
+    position: relative;
+    bottom: 65px;
+}
+
+#box-white-shoes-4{
+    display: none;
+    position: relative;
+    bottom: 65px;
+}
+
 .buy-now #price-2,
 .buy-now #price-3{
     display: none;
@@ -258,17 +295,147 @@
     padding: 10px;
 }
 
-.buy-now button{
-    font-family: Poppins;
+.buy-now a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    color: #000;
     border: 1px solid #cecece;
     background-color: #f6f0e4;
     border-radius: 50px;
-    padding: 10px 50px;
+    padding: 10px 40px;
     cursor: pointer;
 }
 
-.buy-now button:active{background-color:#cececeb4}
+.buy-now a:active{background-color:#cececeb4}
+
+/* BUY NOW SECTION */
+
+
+
+.first-section{
+    width: 100%;
+    height: 100vh;
+}
+
+.first-section .home{
+    text-decoration: none;
+    text-transform: uppercase;
+    position: fixed;
+    top: 10%;
+    left: 7%;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: #000;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.first-section .home:hover{outline: 1px solid #000;}
+
+.box-buy-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.box-buy-image img{
+    max-width: 100%;
+    height: 100vh;
+}
+
+.box-description{
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.box-description p{
+    font-size: 20px;
+    width: 27%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    letter-spacing: -2px;
+    margin-right: 100px;
+    padding: 15px;
+}
+
+.box-description p:hover{outline: 1px solid black;}
+
+.box-description span{
+    font-size: 20px;
+    width: 30%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.second-section{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-contact{
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-contact .work{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    padding: 7px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+.box-contact .contact{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    padding: 7px;
+    background-color: #fff;
+    background-size: 0% 0% ;
+    margin: 2px 0 2px 0;
+}
+
+.box-contact .cv{
+    text-decoration: none;
+    text-align: right;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    padding: 7px;
+    background-color: #fff;
+    background-size: 0% 0% ;
+    margin: 2px 0 2px 15px;
+}
+
+.box-contact .contact:hover{outline: 1px solid #000; background-color: #000; color: #fff;}
+.box-contact .work:hover{outline: 1px solid #000; background-color: #000; color: #fff;}
+.box-contact .cv:hover{outline: 1px solid #000; background-color: #000; color: #fff;}
+
 
 /* Media queris */
 @media screen and (max-width: 1200px){
@@ -277,7 +444,6 @@
     #box-shoes img {max-width: 400px;}
 
     .name-shoes{width: 18%; padding-left: 30px;}
-
     
     #box-next-shoes-2{bottom: 25px;}
     #box-next-shoes-3{bottom: 35px; right: 15px;}
@@ -291,7 +457,6 @@
 
     .name-shoes{width: 18%; padding-left: 30px;}
 
-    
     #box-next-shoes-2{bottom: 25px;}
     #box-next-shoes-3{bottom: 35px; right: 15px;}
     #box-next-shoes-4{bottom: 35px; left: 35px;}
@@ -308,13 +473,12 @@
     .name-shoes h4,
     .name-shoes span{font-size: 30px;}
     .buy-now #price{font-size: 30px;}
-    .buy-now button{padding: 15px 50px; font-size: 18px;}
+    .buy-now a{padding: 15px 50px; font-size: 18px;}
     
     #box-next-shoes-2,
     #box-next-shoes-3,
     #box-next-shoes-4{width: 150px; height: 150px;} 
 
-    
     #box-next-shoes-2 img,
     #box-next-shoes-3 img,
     #box-next-shoes-4 img{max-width: 150px;}
@@ -331,7 +495,7 @@
     .name-shoes h4,
     .name-shoes span{font-size: 30px;}
     .buy-now #price{font-size: 30px;}
-    .buy-now button{padding: 15px 50px; font-size: 18px;}
+    .buy-now a{padding: 15px 50px; font-size: 18px;}
     
     #box-next-shoes-2,
     #box-next-shoes-3,
@@ -355,7 +519,7 @@
     .name-shoes h4,
     .name-shoes span{font-size: 30px;}
     .buy-now #price{font-size: 30px;}
-    .buy-now button{padding: 15px 50px; font-size: 18px;}
+    .buy-now a{padding: 15px 50px; font-size: 18px;}
     
     #box-next-shoes-2,
     #box-next-shoes-3,
@@ -381,7 +545,7 @@
     .name-shoes h4,
     .name-shoes span{font-size: 30px;}
     .buy-now #price{font-size: 30px;}
-    .buy-now button{padding: 15px 50px; font-size: 18px;}
+    .buy-now a{padding: 15px 50px; font-size: 18px;}
     
     #box-next-shoes-2,
     #box-next-shoes-3,
@@ -407,7 +571,7 @@
     .name-shoes h4,
     .name-shoes span{font-size: 40px;}
     .buy-now #price{font-size: 40px;}
-    .buy-now button{padding: 15px 50px; font-size: 22px;}
+    .buy-now a{padding: 15px 50px; font-size: 22px;}
     
     #box-next-shoes-2,
     #box-next-shoes-3,
@@ -433,7 +597,7 @@
     .name-shoes h4,
     .name-shoes span{font-size: 40px;}
     .buy-now #price{font-size: 40px;}
-    .buy-now button{padding: 15px 50px; font-size: 22px;}
+    .buy-now a{padding: 15px 50px; font-size: 22px;}
     
     #box-next-shoes-2,
     #box-next-shoes-3,
