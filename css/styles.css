@@ -1,0 +1,345 @@
+/* Circulo fondo */
+#description-shoes{
+    width: 300px;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0px;
+    line-height: 20px;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.circle{
+    background: #f6f0e4;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    margin: auto;
+    z-index: -1;
+}
+
+/* Barra de navegación */
+.navegation{
+    width: 100%;
+    height: 10vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box-logo{padding-right: 24%;}
+.box-search-icon{padding-left: 24%;}
+
+.box-logo img{
+    max-width: 150px;
+}
+
+.box-search-icon img{
+    max-width: 20px;
+    filter: invert();
+}
+
+/* Contenido principal, modelo y zapatilla */
+.main-contain{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 65vh;
+}
+
+.shoes-model{
+    width: 20%;
+    height: auto;
+    padding-right: 150px;
+}
+
+.shoes-model h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    line-height: 90px;
+    letter-spacing: -5px;
+    font-size: 100px;
+}
+
+.shoes-model span{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 100px;
+}
+
+.box-shoes img{
+    max-width: 450px;
+}
+
+/* Contenido final */
+.footer-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 25vh;
+}
+
+.name-shoes{
+    width: 13%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+}
+
+.name-shoes h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    margin-right: 7px;
+}
+
+.name-shoes span{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#box-next-shoes-2,
+#box-next-shoes-3,
+#box-next-shoes-4{
+    height: 100px;
+    width: 100px;
+    background: #cecece;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+#box-next-shoes-2 img,
+#box-next-shoes-3 img,
+#box-next-shoes-4 img{max-width: 110px;}
+
+#box-next-shoes-2{
+    position: absolute;
+    bottom: 50px;
+}
+
+#box-next-shoes-3{
+    position: relative;
+    bottom: 65px;
+
+}
+
+#box-next-shoes-4{
+    position: relative;
+    bottom: 65px;
+}
+
+.buy-now{
+    display: flex;
+    align-items: center;
+}
+
+.buy-now #price{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 10px;
+}
+
+.buy-now button{
+    font-family: Poppins;
+    font-weight: 600;
+    border: 1px solid #cecece;
+    border-radius: 50px;
+    padding: 10px 50px;
+}
+
+/* Media queris */
+@media screen and (max-width: 1200px){
+    .circle{width: 500px; height: 500px;}
+    .shoes-model h1{font-size: 100px; font-weight: 200; line-height: 80px;}
+    .box-shoes img {max-width: 400px;}
+
+    .name-shoes{width: 18%; padding-left: 30px;}
+
+    
+    #box-next-shoes-2{bottom: 25px;}
+    #box-next-shoes-3{bottom: 35px; right: 15px;}
+    #box-next-shoes-4{bottom: 35px;}
+}
+
+@media screen and (max-width: 1024px){
+    .circle{width: 450px; height: 450px;}
+    .shoes-model h1{font-size: 90px; font-weight: 200; line-height: 80px;}
+    .box-shoes img {max-width: 400px;}
+
+    .name-shoes{width: 18%; padding-left: 30px;}
+
+    
+    #box-next-shoes-2{bottom: 25px;}
+    #box-next-shoes-3{bottom: 35px; right: 15px;}
+    #box-next-shoes-4{bottom: 35px; left: 35px;}
+}
+
+@media screen and (min-width: 1600px){
+    .circle{width: 700px; height: 700px;}
+    #description-shoes{width: 400px; font-size: 18px;}
+    .shoes-model h1{font-size: 120px; font-weight: 200; line-height: 100px;}
+    .shoes-model span{font-size: 120px;}
+    .box-shoes img {max-width: 550px;}
+
+    .name-shoes{width: 15%; padding-left: 50px;}
+    .name-shoes h4,
+    .name-shoes span{font-size: 30px;}
+    .buy-now #price{font-size: 30px;}
+    .buy-now button{padding: 15px 50px; font-size: 18px;}
+    
+    #box-next-shoes-2,
+    #box-next-shoes-3,
+    #box-next-shoes-4{width: 150px; height: 150px;} 
+
+    
+    #box-next-shoes-2 img,
+    #box-next-shoes-3 img,
+    #box-next-shoes-4 img{max-width: 150px;}
+}
+
+@media screen and (min-width: 1700px) {
+    .circle{width: 700px; height: 700px;}
+    #description-shoes{width: 400px; font-size: 18px;}
+    .shoes-model h1{font-size: 120px; font-weight: 200; line-height: 100px;}
+    .shoes-model span{font-size: 120px;}
+    .box-shoes img {max-width: 550px;}
+
+    .name-shoes{width: 15%; padding-left: 50px;}
+    .name-shoes h4,
+    .name-shoes span{font-size: 30px;}
+    .buy-now #price{font-size: 30px;}
+    .buy-now button{padding: 15px 50px; font-size: 18px;}
+    
+    #box-next-shoes-2,
+    #box-next-shoes-3,
+    #box-next-shoes-4{width: 150px; height: 150px;} 
+
+    #box-next-shoes-2 img,
+    #box-next-shoes-3 img,
+    #box-next-shoes-4 img{max-width: 150px;}
+}
+
+@media screen and (min-width: 2000px){
+    .box-logo img {max-width: 170px;}
+    .box-search-icon img {max-width: 30px;}
+    .circle{width: 800px; height: 800px;}
+    #description-shoes{top: 25%; font-size: 22px; line-height: 30px;}
+    .shoes-model h1{font-size: 150px; line-height: 120px;}
+    .shoes-model span{font-size: 150px;}
+    .box-shoes img {max-width: 650px;}
+
+    .name-shoes{width: 15%; padding-left: 50px;}
+    .name-shoes h4,
+    .name-shoes span{font-size: 30px;}
+    .buy-now #price{font-size: 30px;}
+    .buy-now button{padding: 15px 50px; font-size: 18px;}
+    
+    #box-next-shoes-2,
+    #box-next-shoes-3,
+    #box-next-shoes-4{width: 150px; height: 150px;} 
+
+    #box-next-shoes-4{right: 60px;} 
+
+    #box-next-shoes-2 img,
+    #box-next-shoes-3 img,
+    #box-next-shoes-4 img{max-width: 160px;}
+}
+
+@media screen and (min-width: 2200px){
+    .box-logo img {max-width: 180px;}
+    .box-search-icon img {max-width: 40px;}
+    .circle{width: 900px; height: 900px;}
+    #description-shoes{top: 25%; font-size: 25px; line-height: 30px;}
+    .shoes-model h1{font-size: 200px; line-height: 150px;}
+    .shoes-model span{font-size: 200px;}
+    .box-shoes img {max-width: 800px;}
+
+    .name-shoes{width: 15%; padding-left: 50px;}
+    .name-shoes h4,
+    .name-shoes span{font-size: 30px;}
+    .buy-now #price{font-size: 30px;}
+    .buy-now button{padding: 15px 50px; font-size: 18px;}
+    
+    #box-next-shoes-2,
+    #box-next-shoes-3,
+    #box-next-shoes-4{width: 150px; height: 150px;} 
+
+    #box-next-shoes-4{right: 60px;} 
+
+    #box-next-shoes-2 img,
+    #box-next-shoes-3 img,
+    #box-next-shoes-4 img{max-width: 160px;}
+}
+
+@media screen and (min-width: 2400px){
+    .box-logo img {max-width: 180px;}
+    .box-search-icon img {max-width: 40px;}
+    .circle{width: 1000px; height: 1000px;}
+    #description-shoes{width: 25%; top: 25%; font-size: 25px; line-height: 30px;}
+    .shoes-model h1{font-size: 200px; line-height: 150px;}
+    .shoes-model span{font-size: 200px;}
+    .box-shoes img {max-width: 800px;}
+
+    .name-shoes{width: 15%; padding-left: 50px;}
+    .name-shoes h4,
+    .name-shoes span{font-size: 40px;}
+    .buy-now #price{font-size: 40px;}
+    .buy-now button{padding: 15px 50px; font-size: 22px;}
+    
+    #box-next-shoes-2,
+    #box-next-shoes-3,
+    #box-next-shoes-4{width: 190px; height: 190px;} 
+
+    #box-next-shoes-4{right: 80px;} 
+
+    #box-next-shoes-2 img,
+    #box-next-shoes-3 img,
+    #box-next-shoes-4 img{max-width: 200px;}
+}
+
+@media screen and (min-width: 2700px){
+    .box-logo img {max-width: 180px;}
+    .box-search-icon img {max-width: 40px;}
+    .circle{width: 1100px; height: 1100px;}
+    #description-shoes{width: 22%; top: 25%; font-size: 30px; line-height: 35px;}
+    .shoes-model h1{font-size: 200px; line-height: 150px;}
+    .shoes-model span{font-size: 200px;}
+    .box-shoes img {max-width: 800px;}
+
+    .name-shoes{width: 15%; padding-left: 50px;}
+    .name-shoes h4,
+    .name-shoes span{font-size: 40px;}
+    .buy-now #price{font-size: 40px;}
+    .buy-now button{padding: 15px 50px; font-size: 22px;}
+    
+    #box-next-shoes-2,
+    #box-next-shoes-3,
+    #box-next-shoes-4{width: 200px; height: 200px;} 
+
+    #box-next-shoes-4{right: 100px;} 
+
+    #box-next-shoes-2 img,
+    #box-next-shoes-3 img,
+    #box-next-shoes-4 img{max-width: 220px;}
+}
