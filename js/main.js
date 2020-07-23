@@ -2,11 +2,11 @@
 function restore(){
         // Muestro las miniaturas por defecto
     document.getElementById('box-white-shoes-2').style.display="none";
-    document.getElementById('box-next-shoes-2').style.display="block";
+    document.getElementById('box-next-shoes-2').style.display="flex";
     document.getElementById('box-white-shoes-3').style.display="none";
-    document.getElementById('box-next-shoes-3').style.display="block";
+    document.getElementById('box-next-shoes-3').style.display="flex";
     document.getElementById('box-white-shoes-4').style.display="none";
-    document.getElementById('box-next-shoes-4').style.display="block";
+    document.getElementById('box-next-shoes-4').style.display="flex";
 }
 
 function show1(){
@@ -35,7 +35,7 @@ function show1(){
 function show2(){
         // Muestro zapatilla blanca como miniatura
     restore();    
-    document.getElementById('box-white-shoes-2').style.display="block";
+    document.getElementById('box-white-shoes-2').style.display="flex";
     document.getElementById('box-next-shoes-2').style.display="none";
         // Imagen de zapatilla principal
     document.getElementById('box-shoes').style.display="none";
@@ -57,11 +57,10 @@ function show2(){
     document.getElementById('price-3').style.display="none";
 }
 
-
 function show3(){
         // Muestro zapatilla blanca como miniatura
     restore();
-    document.getElementById('box-white-shoes-3').style.display="block";
+    document.getElementById('box-white-shoes-3').style.display="flex";
     document.getElementById('box-next-shoes-3').style.display="none";
         // Imagen de zapatilla principal
     document.getElementById('box-shoes').style.display="none";
@@ -87,7 +86,7 @@ function show3(){
 function show4(){
         // Muestro zapatilla blanca como miniatura
     restore();
-    document.getElementById('box-white-shoes-4').style.display="block";
+    document.getElementById('box-white-shoes-4').style.display="flex";
     document.getElementById('box-next-shoes-4').style.display="none";
         // Imagen de zapatilla principal
     document.getElementById('box-shoes').style.display="none";

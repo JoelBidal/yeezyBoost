@@ -50,9 +50,7 @@
 .box-logo{padding-right: 25%;}
 .box-search-icon{padding-left: 25%;}
 
-.box-logo img{
-    max-width: 150px;
-}
+.box-logo img{max-width: 150px;}
 
 .box-search-icon img{
     max-width: 20px;
@@ -165,7 +163,7 @@
     bottom: 65px;
 }
 
-/* ---------------------------------  Segunda pantalla */
+/* Cambio de estado */
 #description-shoes-2,
 #description-shoes-3,
 #description-shoes-4{
@@ -192,7 +190,6 @@
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
-
 
 #box-shoes-2,
 #box-shoes-3,
@@ -310,9 +307,6 @@
 .buy-now a:active{background-color:#cececeb4}
 
 /* BUY NOW SECTION */
-
-
-
 .first-section{
     width: 100%;
     height: 100vh;
@@ -394,6 +388,8 @@
 }
 
 .box-contact .work{
+    width: 100%;
+    text-align: center;
     text-decoration: none;
     color: #000;
     font-family: 'Poppins', sans-serif;
@@ -406,36 +402,37 @@
 }
 
 .box-contact .contact{
+    width: 48%;
+    text-align: center;
     text-decoration: none;
     color: #000;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     font-weight: 600;
     letter-spacing: -1px;
-    padding: 7px;
+    padding: 7px 0;
     background-color: #fff;
-    background-size: 0% 0% ;
-    margin: 2px 0 2px 0;
+    margin: 0 2px;
+
 }
 
 .box-contact .cv{
+    width: 48%;
+    text-align: center;
     text-decoration: none;
-    text-align: right;
     color: #000;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     font-weight: 600;
     letter-spacing: -1px;
-    padding: 7px;
+    padding: 7px 0;
     background-color: #fff;
-    background-size: 0% 0% ;
-    margin: 2px 0 2px 15px;
+    margin: 0 2px;
 }
 
 .box-contact .contact:hover{outline: 1px solid #000; background-color: #000; color: #fff;}
 .box-contact .work:hover{outline: 1px solid #000; background-color: #000; color: #fff;}
 .box-contact .cv:hover{outline: 1px solid #000; background-color: #000; color: #fff;}
-
 
 /* Media queris */
 @media screen and (max-width: 1200px){
@@ -451,15 +448,15 @@
 }
 
 @media screen and (max-width: 1024px){
-    #circle{width: 450px; height: 450px;}
+    #circle{width: 470px; height: 470px;}
     #shoes-model h1{font-size: 90px; font-weight: 200; line-height: 80px;}
     #box-shoes img {max-width: 400px;}
 
     .name-shoes{width: 18%; padding-left: 30px;}
 
-    #box-next-shoes-2{bottom: 25px;}
-    #box-next-shoes-3{bottom: 35px; right: 15px;}
-    #box-next-shoes-4{bottom: 35px; left: 35px;}
+    #box-next-shoes-2{bottom: 100px;}
+    #box-next-shoes-3{bottom: 100px; right: 15px;}
+    #box-next-shoes-4{bottom: 100px; left: 35px;}
 }
 
 @media screen and (min-width: 1600px){
@@ -486,7 +483,7 @@
 
 @media screen and (min-width: 1700px) {
     #circle{width: 700px; height: 700px;}
-    #description-shoes{width: 400px; font-size: 18px;}
+    #description-shoes{width: 400px; font-size: 20px;}
     #shoes-model h1{font-size: 120px; font-weight: 200; line-height: 100px;}
     #shoes-model span{font-size: 120px;}
     #box-shoes img {max-width: 550px;}
@@ -510,7 +507,7 @@
     .box-logo img {max-width: 170px;}
     .box-search-icon img {max-width: 30px;}
     #circle{width: 800px; height: 800px;}
-    #description-shoes{top: 25%; font-size: 22px; line-height: 30px;}
+    #description-shoes{top: 18%; font-size: 22px; line-height: 30px;}
     #shoes-model h1{font-size: 150px; line-height: 120px;}
     #shoes-model span{font-size: 150px;}
     #box-shoes img {max-width: 650px;}
@@ -530,6 +527,12 @@
     #box-next-shoes-2 img,
     #box-next-shoes-3 img,
     #box-next-shoes-4 img{max-width: 160px;}
+
+    .box-description p,
+    .box-description span{font-size: 30px;}
+    .box-contact .work{font-size: 50px;}
+    .box-contact .contact{font-size: 25px;}
+    .box-contact .cv{font-size: 25px;}
 }
 
 @media screen and (min-width: 2200px){
@@ -551,11 +554,15 @@
     #box-next-shoes-3,
     #box-next-shoes-4{width: 150px; height: 150px;} 
 
-    #box-next-shoes-4{right: 60px;} 
+    #box-next-shoes-4{right: 90px;} 
 
     #box-next-shoes-2 img,
     #box-next-shoes-3 img,
     #box-next-shoes-4 img{max-width: 160px;}
+
+    .box-contact .work{font-size: 50px;}
+    .box-contact .contact{font-size: 25px;}
+    .box-contact .cv{font-size: 25px;}
 }
 
 @media screen and (min-width: 2400px){
@@ -582,6 +589,13 @@
     #box-next-shoes-2 img,
     #box-next-shoes-3 img,
     #box-next-shoes-4 img{max-width: 200px;}
+
+    .box-description p,
+    .box-description span{font-size: 40px;}
+    .box-contact .work{font-size: 50px;}
+    .box-contact .contact{font-size: 25px;}
+    .box-contact .cv{font-size: 25px;}
+
 }
 
 @media screen and (min-width: 2700px){
@@ -608,4 +622,8 @@
     #box-next-shoes-2 img,
     #box-next-shoes-3 img,
     #box-next-shoes-4 img{max-width: 220px;}
+
+    .box-contact .work{font-size: 50px;}
+    .box-contact .contact{font-size: 25px;}
+    .box-contact .cv{font-size: 25px;}
 }
