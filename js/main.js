@@ -1,4 +1,3 @@
-var showing = 1;
 
 function restore(){
         // Muestro las miniaturas por defecto
